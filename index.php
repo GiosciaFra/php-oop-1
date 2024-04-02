@@ -25,13 +25,15 @@ require 'db.php'
             foreach ($movies as $movie) {
                 echo "
             <div class='col-md-3'>
-                <div class='card'>
-                    <img src='" . $movie->poster . "' class='card-img-top' alt='" . $movie->getTitle() . "'>
-                    <div class='card-body'>
-                        <h3 class='card-title'><strong>" . $movie->getTitle() . "</strong></h3>
-                        <p class='card-text'><strong>Lingua:</strong> " . $movie->language . "</p>
-                        <p class='card-text'><strong>Anno uscita:</strong> " . $movie->year . "</p>
-                        <p class='card-text'><strong>Genere:</strong> " . $movie->genre->getGenre() . "</p>
+                <div class='card bg-black  '  >
+                    <img src='" . $movie->poster . "' class='card-img-top object-fit-cover'  alt='" . $movie->getTitle() . "'>
+                    <div class='card-body m-3 text-white ' >
+                        <h3 class='card-title text-warning  text-uppercase '><strong>" . $movie->getTitle() . "</strong></h3>
+                        <p class='card-text  mb-1 '><strong>Lingua:</strong> " . $movie->language . "</p>
+                        <p class='card-text  mb-1'><strong>Anno uscita:</strong> " . $movie->year . "</p>
+                        <p class='card-text  mb-1'><strong>Genere:</strong> " . $movie->genre->getGenre() . "</p>
+                        <p class='card-text  mb-1'><strong>Regista:</strong> " . $movie->director->getInfoDirector() . "</p>
+
                     </div>
                 </div>
             </div>";
