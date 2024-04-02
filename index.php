@@ -7,12 +7,19 @@ class Movie
     public $language;
     public $year;
 
-    // costruttore
-    public function __construct($title, $language, $year)
+    // costruttore    
+    /**
+     * __construct
+     *
+     * @param  mixed $_title
+     * @param  mixed $_language
+     * @param  mixed $_year
+     */
+    public function __construct($_title, $_language, $_year)
     {
-        $this->title = $title;
-        $this->language = $language;
-        $this->year = $year;
+        $this->title = $_title;
+        $this->language = $_language;
+        $this->year = $_year;
     }
 }
 ?>
