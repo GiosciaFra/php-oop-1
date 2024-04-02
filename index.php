@@ -15,7 +15,7 @@ class Movie
      * @param  mixed $_title
      * @param  mixed $_language
      * @param  mixed $_year
-     * @param  mixed $genre
+     * @param  mixed $_genre
      * 
      */
     public function __construct($_title, $_language, $_year, $_genre)
