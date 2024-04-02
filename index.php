@@ -1,3 +1,15 @@
+<?php
+// definisco la classe
+class Movie
+{
+    // variabili d'istanza
+    public $title;
+    public $language;
+    public $year;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
