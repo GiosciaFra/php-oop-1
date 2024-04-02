@@ -6,8 +6,15 @@ class Movie
     public $title;
     public $language;
     public $year;
-}
 
+    // costruttore
+    public function __construct($title, $language, $year)
+    {
+        $this->title = $title;
+        $this->language = $language;
+        $this->year = $year;
+    }
+}
 ?>
 
 <!DOCTYPE html>
